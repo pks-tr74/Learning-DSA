@@ -1,7 +1,7 @@
-## 1. Arithmetic (Số học)
+### A. Basic Algorithms
 
-## 2. Sorting Algorithms (Các thuật toán sắp xếp)
+### B. Sorting Algorithms (Các thuật toán sắp xếp)
 
-## 3. Greedy Algorithms (Giải thuật tham lam)
+### C. Greedy Algorithms (Giải thuật tham lam)
 
-## 4. Dynamic Programming (Quy hoạch động)
+### D. Basic Algorithms
