@@ -1,0 +1,119 @@
+* {
+    font-family: 'Segoe UI', 'Roboto', 'Noto Sans';
+    font-size: 14px;
+}
+
+QMainWindow { background-color: #F5F7FA; color: #111827; }
+QWidget#sidebarContainer { background-color: #ffffff; border-right: 1px solid #E5E7EB; }
+QLabel#logoLabel { font-size: 20px; font-weight: bold; color: #3A7AFE; padding: 20px; }
+
+QListWidget#sidebar { background-color: #ffffff; border: none; font-size: 15px; outline: 0; }
+QListWidget#sidebar:focus { outline: none; }
+QListWidget#sidebar::item { padding: 15px 20px; color: #4B5563; border-radius: 8px; margin: 5px 10px; outline: 0; }
+QListWidget#sidebar::item:hover { background-color: #E2E8F0; color: #000000; }
+QListWidget#sidebar::item:selected { background-color: #3A7AFE; color: white; font-weight: bold; }
+
+QWidget#header { background-color: #ffffff; border-bottom: 1px solid #E5E7EB; padding: 10px 20px; }
+QLabel#headerTitle { font-size: 22px; font-weight: bold; color: #111827; }
+QLabel { color: #111827; }
+
+QPushButton {
+    padding: 8px 16px; border-radius: 4px; font-size: 14px; font-weight: bold;
+    color: #000000; background-color: #E5E7EB; border: 1px solid #D1D5DB;
+}
+QPushButton:hover { background-color: #D1D5DB; }
+QPushButton#btnPrimary { background-color: #3A7AFE; color: white; border: none; }
+QPushButton#btnPrimary:hover { background-color: #2563EB; }
+QPushButton#btnDanger { background-color: #EF4444; color: white; border: none; }
+QPushButton#btnDanger:hover { background-color: #DC2626; }
+
+QLineEdit, QComboBox, QDateEdit, QSpinBox {
+    padding: 8px 12px; border: 1px solid #D1D5DB; border-radius: 4px;
+    font-size: 14px; background-color: #FFFFFF; color: #000000;
+}
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus { border: 1px solid #3A7AFE; }
+
+/* COMBOBOX DROPDOWN STYLING */
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #000000;
+    selection-background-color: #3A7AFE; /* Xanh dương khi click */
+    selection-color: white;
+    outline: none;
+    border: 1px solid #D1D5DB;
+}
+QComboBox QAbstractItemView::item {
+    color: #000000;
+    padding: 8px;
+}
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Tối mờ khi hover */
+    color: #000000;
+}
+
+QTableView QLineEdit, QTableView QComboBox, QTableView QDateEdit {
+    padding: 0px; margin: 0px; border: none; outline: none;
+    background-color: #FFFFFF; color: #000000;
+}
+
+QTableView {
+    background-color: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 8px;
+    gridline-color: #E2E8F0; font-size: 14px; color: #000000; outline: 0;
+}
+QTableView:focus { outline: 0; }
+QTableView::item { color: #000000; border: none; outline: 0; }
+QTableView::item:focus { outline: 0; border: none; }
+QTableView::item:hover { background-color: rgba(58, 122, 254, 0.15); }
+QTableView::item:selected { background-color: #DDE8FF; color: #000000; }
+
+QHeaderView::section {
+    background-color: #F9FAFB; color: #000000; padding: 10px; border: none;
+    border-bottom: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; font-weight: bold;
+}
+
+QDialog { background-color: #FFFFFF; color: #000000; }
+QDialog QLabel { color: #000000; font-weight: bold; }
+QMessageBox { background-color: #FFFFFF; }
+QMessageBox QLabel { color: #000000; }
+
+QTableView QScrollBar:horizontal {
+    border: none;
+    background: #E5E7EB;
+    height: 10px;
+    margin: 0px 0px 0 0px;
+    border-radius: 5px;
+}
+QTableView QScrollBar::handle:horizontal {
+    background: #9CA3AF;
+    min-width: 50px;
+    border-radius: 5px;
+}
+QTableView QScrollBar::handle:horizontal:hover {
+    background: #6B7280;
+}
+QTableView QScrollBar::add-line:horizontal, QTableView QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+}
+
+QTableView QScrollBar:vertical {
+    border: none;
+    background: #E5E7EB;
+    width: 10px;
+    margin: 0px 0px 0 0px;
+    border-radius: 5px;
+}
+QTableView QScrollBar::handle:vertical {
+    background: #9CA3AF;
+    min-height: 50px;
+    border-radius: 5px;
+}
+QTableView QScrollBar::handle:vertical:hover {
+    background: #6B7280;
+}
+QTableView QScrollBar::add-line:vertical, QTableView QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
